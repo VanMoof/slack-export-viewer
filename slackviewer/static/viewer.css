@@ -68,6 +68,13 @@ body {
     overflow-y: scroll;
 }
 
+.nested {
+    margin-bottom: 15px;
+    margin-left: 46px;
+    padding-left: 8px;
+    border-left: 3px solid #CCC;
+}
+
 .message-container {
     clear: left;
     min-height: 56px; // height of image plus 20px padding
