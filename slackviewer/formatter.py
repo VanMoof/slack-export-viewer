@@ -77,10 +77,6 @@ class SlackFormatter(object):
             message = markdown2.markdown(
                 message,
                 extras=[
-                    "cuddled-lists",
-                    # This gives us <pre> and <code> tags for ```-fenced blocks
-                    "fenced-code-blocks",
-                    "pyshell"
                 ]
             ).strip()
 
