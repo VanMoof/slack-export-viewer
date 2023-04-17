@@ -47,10 +47,10 @@ class Reader(object):
 
         return self._create_messages(channel_names, channel_data)
 
-    def compile_groups(self):
+    def compile_groups(self, groups=None):
 
         group_data = self._read_from_json("groups.json")
-        group_names = [c["name"] for c in group_data.values()]
+        group_names = [c["name"] for c in group_data.values() if not groups or c["name"] in groups]
 
         return self._create_messages(group_names, group_data)
 
